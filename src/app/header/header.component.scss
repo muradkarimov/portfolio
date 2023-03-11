@@ -587,7 +587,7 @@ mat-form-field{
         padding-left: 100px !important;
     }
 }
-@media only screen  and (max-width: 1090px){
+@media only screen and (min-width: 497px) and (max-width: 1090px){
     #contact{
         padding-left: 30px !important;
     }
@@ -601,9 +601,9 @@ mat-form-field{
        margin: 0px !important;
     }
     ::ng-deep .owl-prev{
-        right: -1px;
+        left: -1px;
     }
     ::ng-deep .owl-next{
-        left: -1px;
+        right: -1px;
     }
 }

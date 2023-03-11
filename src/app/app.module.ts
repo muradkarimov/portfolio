@@ -12,10 +12,12 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
 import { environment } from 'src/environments/environment';
+import { PageupComponent } from './pageup/pageup.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    PageupComponent,
     
   ],
   imports: [
