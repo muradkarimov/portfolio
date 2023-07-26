@@ -73,7 +73,8 @@
 
     <div class="col-lg-5">
      <div class="photo">
-      <img src="../../assets/img/banner-02.png" alt="" >
+      <!-- <img src="../../assets/img/banner-02.png" alt="" > -->
+      <img src="../../assets/img/fotor_2023-5-4_23_39_11.png" alt="">
      </div>
     </div>
     <div class="col-lg-1"></div>
@@ -98,7 +99,8 @@ data-aos-duration="1000">
   <div class="education-style ">
     <div class="education-left">
       <div class="education-image">
-          <img src="../../assets/img/petrol.jpg" alt="">
+          <!-- <img src="../../assets/img/petrol.jpg" alt=""> -->
+          <img src="../../assets/img/download.jpg" alt="">
       </div>
       <div class="education-center">
           <span class="date">2020-Present</span>
@@ -122,12 +124,12 @@ data-aos-duration="1000">
   <div class="education-style ">
     <div class="education-left">
       <div class="education-image">
-          <img src="../../assets/img/mizan.png" alt="">
+          <img src="../../assets/img/blue_medium.png" alt="">
       </div>
       <div class="education-center">
           <span class="date">2022-2023</span>
           <h4 class="education-title">
-              Mizan Academy
+              BrainWave Academy
           </h4>
           <h6 class="subtitle">
            Front-end Developer
@@ -294,7 +296,7 @@ data-aos-duration="1500">
           <div class="category">
             <div class="title">
               <h5>
-                NFT page
+                Simple NFT page using Angular
               </h5>
             </div>
             <div class="category-button">
@@ -306,7 +308,7 @@ data-aos-duration="1500">
       <ng-template carouselSlide>
         <div class="project">
           <div class="inner">
-            <img src="../../assets/img/screen2.png" alt="">
+            <img src="../../assets/img/screen7.png" alt="">
           </div>
           <div class="category">
             <div class="title">
@@ -315,7 +317,7 @@ data-aos-duration="1500">
               </h5>
             </div>
             <div class="category-button">
-              <a class="rn-btn" href="https://muradkarimov.github.io/Koppee/"><span>View Project</span></a>
+              <a class="rn-btn" href="https://muradkarimov.github.io/stack/"><span>View Project</span></a>
             </div>
           </div>
         </div>
@@ -339,69 +341,71 @@ data-aos-duration="2000">
   <div class="education">
     <h2>Get in Touch</h2>
   </div>
-  <div class="row container m-l">
-    <!-- <div class="col-lg-1"></div> -->
-
-    <div class="col-lg-6 ">
-      <div class="communicate">
-        <h4>
-          <i class="fa-solid fa-phone"></i>
-          +9994507772611
-        </h4>
-      </div>
-
-      <div class="communicate">
-        <h4>
-          <i class="fa-regular fa-envelope"></i>
-          muradhafizoglu.kr@gmail.com
-        </h4>
-      </div>
-
-      <div class="communicate">
-        <h4>
-          <i class="fa-solid fa-location-dot"></i>
-          Baku, Azerbaijan
-        </h4>
-      </div>
-
-    </div>
-
-    <div class="col-lg-6 form1 ">
-      <form [formGroup]="myForm"  class="form " (ngSubmit)="onSubmit">
-
-
-        <mat-form-field class="form-element ">
-          <input matInput placeholder="Name" formControlName="name">
-          <mat-error *ngIf="!myForm.controls['name'].valid && myForm.controls['name'].touched">
-            {{ titleAlert }}
-          </mat-error>
-        </mat-form-field>
-
-
-        
-
-        <mat-form-field class="form-element">
-          <input matInput placeholder="Email" formControlName="email">
-          <mat-error *ngIf="!myForm.controls['email'].valid && myForm.controls['email'].touched">
-            {{ getErrorEmail() }}
-          </mat-error>
-        </mat-form-field>  
-        
-        <mat-form-field class="form-element">
-          <textarea matInput placeholder="Message" formControlName="message" ></textarea>
-          <!-- <mat-error *ngIf="!myForm.controls['message'].valid && myForm.controls['message'].touched">
-            {{ titleAlert }}
-          </mat-error> -->
-        </mat-form-field>
-    
-      
-        <div class="form-element button1">
-          <button type="submit" class="button" [disabled]="!myForm.valid">Send</button>
+  <div class="container">
+    <div class="row  m-l">
+      <!-- <div class="col-lg-1"></div> -->
+  
+      <div class="col-lg-6 ">
+        <div class="communicate">
+          <h4>
+            <i class="fa-solid fa-phone"></i>
+            +9994507772611
+          </h4>
         </div>
-    
-      </form>
+  
+        <div class="communicate">
+          <h4>
+            <i class="fa-regular fa-envelope"></i>
+            muradhafizoglu.kr@gmail.com
+          </h4>
+        </div>
+  
+        <div class="communicate">
+          <h4>
+            <i class="fa-solid fa-location-dot"></i>
+            Baku, Azerbaijan
+          </h4>
+        </div>
+  
+      </div>
+  
+      <div class="col-lg-6 form1 ">
+        <form [formGroup]="myForm"  class="form " (ngSubmit)="onSubmit">
+  
+  
+          <mat-form-field class="form-element ">
+            <input matInput placeholder="Name" formControlName="name">
+            <mat-error *ngIf="!myForm.controls['name'].valid && myForm.controls['name'].touched">
+              {{ titleAlert }}
+            </mat-error>
+          </mat-form-field>
+  
+  
+          
+  
+          <mat-form-field class="form-element">
+            <input matInput placeholder="Email" formControlName="email">
+            <mat-error *ngIf="!myForm.controls['email'].valid && myForm.controls['email'].touched">
+              {{ getErrorEmail() }}
+            </mat-error>
+          </mat-form-field>  
+          
+          <mat-form-field class="form-element">
+            <textarea matInput placeholder="Message" formControlName="message" ></textarea>
+            <!-- <mat-error *ngIf="!myForm.controls['message'].valid && myForm.controls['message'].touched">
+              {{ titleAlert }}
+            </mat-error> -->
+          </mat-form-field>
+      
+        
+          <div class="form-element button1">
+            <button type="submit" class="button" [disabled]="!myForm.valid">Send</button>
+          </div>
+      
+        </form>
+      </div>
+  
     </div>
-
   </div>
 </div>
 
