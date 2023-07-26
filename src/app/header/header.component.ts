@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 
 
 
@@ -15,12 +15,14 @@ export class HeaderComponent {
   myForm: FormGroup | any;
   titleAlert: string = 'This field is required';
 
-  constructor(private formBuilder: FormBuilder){}
+  private contactForm: AngularFirestoreCollection<any> | undefined;
+
+  constructor(private formBuilder: FormBuilder, private firestore: AngularFirestore){}
 
 
   ngOnInit() {
     this.createForm();
-    
+    this.contactForm = this.firestore.collection('submit');
   }
 
   createForm() {
@@ -41,7 +43,11 @@ export class HeaderComponent {
     this.myForm.reset();
   }
 
-
+  submitData(value:any){
+    this.contactForm?.add(value);
+    this.myForm.reset();
+    console.log(value)
+  }
 
   customOptions: OwlOptions = {
     loop: true,

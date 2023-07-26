@@ -479,6 +479,9 @@ background-color: #00693e !important;
         background-color: #c4cfde !important;
         letter-spacing: 2px !important;
     }
+    .button:disabled{
+        cursor:no-drop !important;
+    }
 }
 .m-l{
     margin-left: 0px ;

@@ -62,7 +62,7 @@
         </p>
         <div class="d-flex align-items-center justify-content-center bg-color">
           <button class="bg-color color-red shadow ">
-            <a href="../../assets/document/Murad's Resume (1).pdf" class="bg-color color-red shadow text-decoration-none">
+            <a href="../../assets/document/CV.pdf" class="bg-color color-red shadow text-decoration-none">
               Download CV
             </a>
           
@@ -399,7 +399,7 @@ data-aos-duration="2000">
       
         
           <div class="form-element button1">
-            <button type="submit" class="button" [disabled]="!myForm.valid">Send</button>
+            <button type="submit" class="button" [disabled]="!myForm.valid" (click)="submitData(myForm.value)">Send</button>
           </div>
       
         </form>
